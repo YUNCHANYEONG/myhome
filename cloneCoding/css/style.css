@@ -1,0 +1,1024 @@
+/*skipnavi*/
+.skipnavi{
+    position: absolute;
+    left: 0;
+    top: -50px;
+    text-indent: -9999px;
+    font-size: 0;
+    width: 100%;
+    z-index: 999;
+}
+.skipnavi>li a:focus, .skipnavi>li a:active{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    text-indent: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+/*skipnavi 끝*/
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/*nav*/
+nav{
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #d1d1d1;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+}
+div.nav_area{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1000px;
+    vertical-align: middle;
+}
+.nav_area .logo{
+    box-sizing: border-box;
+    display: inline;
+}
+.nav_area .logo img{
+    position: relative;
+    top: 19px;
+    left: 20px;
+}
+.nav_area .search{
+    display: inline-block;
+    position: relative;
+    top: 7px;
+    margin-left: 25%;
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: 268px;
+    height: 38px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    background: url(../img/icon_magnifer.png) no-repeat 11px center;
+    background-size: 12px;
+    text-indent: 25px;
+    font-size: 14px;
+    background-color: rgb(248, 248, 248);
+}
+.nav_area ul{
+    display: inline;
+    position: relative;
+    left: 18px;
+    top: 14px;
+}
+.nav_area li{
+    margin: 8px;
+    display: inline;
+}
+.nav_area li img{
+    cursor: pointer;
+    width: 25px;
+}
+.nav_area li:nth-child(2) img{
+    transform: rotate(15deg);
+}
+.nav_area li:nth-child(3){
+    position: relative;
+    top: 1px;
+}
+.nav_area li:nth-child(3) img{
+    width: 27px;
+}
+.nav_area .top_user{
+    background: url(../img/icon_me.jpg) no-repeat center;
+    background-size: 150%;
+    display: inline;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -9px;
+    border-radius: 90px;
+    cursor: pointer;
+}
+/*nav 끝*/
+
+.all{
+    width: 100%;
+    height: 2500px;
+    background-color: #fcfcfc;
+}
+
+/*innerct*/
+.innerct{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*sidebar*/
+#sidebar{
+    position: absolute;
+    top: 60px;
+    right: 43px;
+    box-sizing: border-box;
+    width: 320px;
+    height: 490px;
+    background-color: #fcfcfc;
+    z-index: 800;
+    /* border: 1px solid black; */
+}
+.sideme_area{
+    padding-top: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 26px;
+}
+.sideme_area .side_me{
+    position: relative;
+    display: inline;
+    width: 56px;
+    height: 56px;
+    border-radius: 90px;
+    border: 1px solid rgb(201, 201, 201);
+    float: left;
+}
+
+.sideme_area .side_me1{
+    background: url(../img/icon_me.jpg) no-repeat center;
+    background-size: 150%;
+    display: inline;
+    width: 54px;
+    height: 54px;
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-radius: 90px;
+    float: left;
+    cursor: pointer;
+}
+.sideme_area #sideme_id{
+    float: left;
+    display: inline;
+    position: relative;
+    left: 19px;
+    top: 9px;
+    font-size: 14px;
+    color: gray;
+    cursor: pointer;
+}
+.sideme_area #sideme_id p{
+    margin: 1px;
+}
+.sideme_area #sideme_id p:first-child{
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+}
+.sideme_area #sideme_tr{
+    float: right;
+    display: inline;
+    font-size: 12px;
+    font-weight: bolder;
+    color: rgb(0, 174, 255);
+    position: relative;
+    top: 8px;
+    left: 1px;
+    cursor: pointer;
+}
+.sideuser_area{
+    clear: both;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 26px;
+    position: relative;
+    top: 8px;
+}
+.sideuser_area > .side_com p{ /*회원님을 위한 추천*/
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bolder;
+    color: gray;
+}
+.sideuser_area .side_com p:last-child{/*모두보기*/
+    position: relative;
+    left: 115px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+    cursor: pointer;
+}
+.sideuser_area .sidebar_user .sideuser_ico1{
+    clear: both;
+    background: url(../img/user8_moon.jpg) no-repeat center;
+    background-size: 110%;
+    width: 32px;
+    height: 32px;
+    border-radius: 90px;
+    float: left;
+    cursor: pointer;
+}
+.sideuser_area .sidebar_user .sideuser_ico2{
+    clear: both;
+    background: url(../img/user9_cat.jpg) no-repeat center;
+    background-size: 110%;
+    width: 32px;
+    height: 32px;
+    border-radius: 90px;
+    float: left;
+    cursor: pointer;
+}
+.sideuser_area .sidebar_user .sideuser_ico3{
+    clear: both;
+    background: url(../img/user10_yin.jpg) no-repeat center;
+    background-size: 110%;
+    width: 32px;
+    height: 32px;
+    border-radius: 90px;
+    float: left;
+    cursor: pointer;
+}
+.sideuser_area .sidebar_user .sideuser_ico4{
+    clear: both;
+    background: url(../img/user11_play.jpg) no-repeat center;
+    background-size: 110%;
+    width: 32px;
+    height: 32px;
+    border-radius: 90px;
+    float: left;
+    cursor: pointer;
+}
+.sideuser_area .sidebar_user .sideuser_ico5{
+    clear: both;
+    background: url(../img/user12_draw.jpg) no-repeat center;
+    background-size: 110%;
+    width: 32px;
+    height: 32px;
+    border-radius: 90px;
+    float: left;
+    cursor: pointer;
+}
+.sideuser_area .sidebar_user .sideuser_id{
+    float: left;
+    font-size: 13px;
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+    position: relative;
+    left: 13px;
+    bottom: 15px;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: -15px;
+    cursor: pointer;
+}
+.sideuser_area .sidebar_user .sideuser_id p:last-child{ /*회원님을 위한 추천*/
+    font-size: 12px;
+    color: rgb(151, 151, 151);
+    font-weight: 400;
+    position: relative;
+    bottom: 13px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.sideuser_area .sidebar_user .sideuser_fw{
+    float: right;
+    display: inline;
+    font-size: 12px;
+    font-weight: bolder;
+    color: rgb(0, 174, 255);
+    position: relative;
+    top: 1px;
+    left: 2px;
+    cursor: pointer;
+}
+.sidefooter_area{
+    clear: both;
+    box-sizing: border-box;
+    width: 100%;
+    color: rgb(197, 197, 197);
+    font-size: 6px;
+    padding-left: 20px;
+    position: relative;
+    top: 35px;
+}
+.sidefooter_area p:first-child a{
+    text-decoration: none;
+}
+.sidefooter_area p:first-child a::after{
+    content: "·";
+}
+.sidefooter_area p:first-child a:last-child::after{
+    content: "";
+}
+.sidefooter_area p:first-child a:link{
+    color: rgb(197, 197, 197);
+}
+.sidefooter_area p:first-child a:visited{
+    color: rgb(197, 197, 197);
+}
+
+.sidefooter_area p:nth-child(2) a{
+    text-decoration: none;
+}
+.sidefooter_area p:nth-child(2) a::after{
+    content: "·";
+}
+.sidefooter_area p:nth-child(2)a:last-child::after{
+    content: "";
+}
+.sidefooter_area p:nth-child(2) a:link{
+    color: rgb(197, 197, 197);
+}
+.sidefooter_area p:nth-child(2) a:visited{
+    color: rgb(197, 197, 197);
+}
+/*sidebar 끝*/
+/*content*/
+#content{
+    position: relative;
+    width: 637px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*story*/
+#content .story{
+    position: absolute;
+    right: 0px;
+    top: 86px;
+    box-sizing: border-box;
+    border: 1px solid #d1d1d1;
+    width: 613px;
+    height: 117px;
+    padding: 16px;
+    padding-top: 19px;
+    background-color: white;
+    z-index: 100;
+}
+.story_right{
+    display: none;
+}
+.story .user{
+    display: inline;
+    margin: 0 5px;
+}
+.story > .user .user_ico{
+    position: relative;
+    display: inline;
+    width: 58px;
+    height: 58px;
+    border-radius: 90px;
+    background: red;
+    background: -webkit-linear-gradient(left,rgb(255, 166, 0),rgb(255, 0, 106));
+    background: linear-gradient(left,rgb(255, 166, 0),rgb(255, 0, 106));
+    float: left;
+}
+.story .user .user_ico1{
+    background: url(../img/user1_myungdong.jpg) no-repeat center;
+    background-size: 110%;
+    border: 1px solid white;
+    display: inline;
+    width: 52px;
+    height: 52px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 90px;
+    float: left;
+    cursor: pointer;
+}
+.story .user .user_ico2{
+    background: url(../img/user2_suwon.jpg) no-repeat center;
+    background-size: 110%;
+    border: 1px solid white;
+    display: inline;
+    width: 52px;
+    height: 52px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 90px;
+    float: left;
+    cursor: pointer;
+}
+.story .user .user_ico3{
+    background: url(../img/user3_park.jpg) no-repeat center;
+    background-size: 110%;
+    border: 1px solid white;
+    display: inline;
+    width: 52px;
+    height: 52px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 90px;
+    float: left;
+    cursor: pointer;
+}
+.story .user .user_ico4{
+    background: url(../img/user4_4sq.jpg) no-repeat center;
+    background-size: 110%;
+    border: 1px solid white;
+    display: inline;
+    width: 52px;
+    height: 52px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 90px;
+    float: left;
+    cursor: pointer;
+}
+.story .user .user_ico5{
+    background: url(../img/user5_sea.jpg) no-repeat center;
+    background-size: 110%;
+    border: 1px solid white;
+    display: inline;
+    width: 52px;
+    height: 52px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 90px;
+    float: left;
+    cursor: pointer;
+}
+.story .user .user_ico6{
+    background: url(../img/user6_namsan.jpg) no-repeat center;
+    background-size: 110%;
+    border: 1px solid white;
+    display: inline;
+    width: 52px;
+    height: 52px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 90px;
+    float: left;
+    cursor: pointer;
+}
+.story .user .user_ico7{
+    background: url(../img/user7_chicken.jpg) no-repeat center;
+    background-size: 110%;
+    border: 1px solid white;
+    display: inline;
+    width: 52px;
+    height: 52px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-radius: 90px;
+    float: left;
+    cursor: pointer;
+}
+.story .user tr td{
+    text-align: center;
+}
+.story .user .user_id{
+    display: inline;
+    font-size: 12px;
+    padding: 0;
+}
+
+
+
+#content > input[type=checkbox]{
+    display: none;
+}
+#content >input[type=checkbox] + .story > label{
+    display: none;
+}
+
+
+
+
+/*story 끝*/
+/*feed*/
+#content .feed{
+    position: absolute;
+    right: 0px;
+    top: 230px;
+    box-sizing: border-box;
+    border-right: none;
+    width: 613px;
+    padding: 0px;
+}
+.feed .fed{
+    box-sizing: border-box;
+    margin-bottom: 10px 0;
+    border: 1px solid #d1d1d1;
+    margin-bottom: 20px;
+}
+.feed > .fed > .fed_top{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+}
+.feed > .feed1 .feed1_icon {
+    background: url(../img/user3_park.jpg) no-repeat center;
+    background-size: 110%;
+    width: 32px;
+    height: 32px;
+    border-radius: 90px;
+    float: left;
+    position: relative;
+    top: 19px;
+    left: 11px;
+    display: block;
+    cursor: pointer;
+}
+.feed > .fed > .fed_top span{
+    font-size: 13px;
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+    display: block;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+.feed > .fed > .fed_top > .feed_dat{
+    float: right;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(109, 109, 109);
+    display: block;
+    letter-spacing: 1px;
+    position: relative;
+    top: -3px;
+    right: 12px;
+}
+.feed > .fed > .feed1_pt{
+    background: url(../img/feed1.jpg) no-repeat;
+    background-size: 612px;
+    width: 100%;
+    height: 610px;
+}
+.feed > .fed > .pt_bw{
+    width: 100%;
+    height: 57px;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: white;
+}
+
+/*----------------------------------------*/
+.feed > .fed > .pt_bw input[type=checkbox].luv + .luv_re{
+    display: inline-block;
+    width:4px;
+    height: 24px;
+    padding-left: 30px !important;
+    line-height: 20px !important;
+    background: url(../img/icon_love1.png) no-repeat;
+    background-size: 85%;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+    top: -7px;
+    left: -25px;
+}
+.feed > .fed > .pt_bw input[type=checkbox].luv:checked + .luv_re{
+    background-position: 0 -65px;
+}
+
+/*----------------------------------------*/
+.feed > .fed > .pt_bw img{
+    width: 26px;
+    display: inline-block;
+    cursor: pointer;
+}
+.feed > .fed > .pt_bw img:nth-child(3){
+    position: relative;
+    top: 2px;
+    left: -20px;
+    width: 28px;
+}
+.feed > .fed > .pt_bw img:nth-child(4){
+    transform: rotate(15deg);
+    position: relative;
+    top: 0px;
+    left: -9px;
+    width: 26px;
+}
+.feed > .fed > .pt_bw img:nth-child(5){
+    display: inline;
+    float: right;
+}
+
+.feed > .fed > .comment{
+    width: 100%;
+    height: 290px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background-color: white;
+    margin-top: -14px;
+}
+.feed > .fed > .comment p{
+    line-height: 0.5;
+    font-size: 14px;
+    font-weight: bold;
+}
+.feed > .fed > .comment p .font_bold{
+    font-weight: bold;
+}
+.feed > .fed > .comment p .curser{
+    cursor: pointer;
+}
+.feed > .fed > .comment p span{
+    font-weight: 400;
+}
+.feed > .fed > .comment > p:nth-child(2){
+    margin-top: 20px;
+}
+.feed > .fed > .comment p .font{
+    color: rgb(14, 107, 136);
+}
+.feed > .fed > .comment p.font_light{
+    font-weight: 400;
+}
+.feed > .fed > .comment p .comment_modu{
+    color: rgb(151, 151, 151);
+}
+.feed > .fed > .comment .comment_lv{
+    position: relative;
+    left: 568px;
+    top: -28px;
+    width: 12px;
+    cursor: pointer;
+}
+.feed > .fed > .comment .comment_tm{
+    font-size: 10px;
+    color: rgb(151, 151, 151);
+    position: relative;
+    bottom: 30px;
+}
+
+.feed > .fed > .comment .comment_face{
+    display: block;
+    width: 24px;
+}
+.feed > .fed > .comment > input{
+    display: block;
+    position: relative;
+    top: -25px;
+    left: 40px;
+    width: 480px;
+    height: 24px;
+    border: none;
+}
+.feed > .fed > .comment p:last-child{
+    display: block;
+    position: relative;
+    top: -58px;
+    left: 4px;
+    float: right;
+    color: rgba(0, 191, 255, 0.712);
+}
+/*피드1끝*/
+/*피드2*/
+.feed > .feed2 .feed2_icon{
+    background: url(../img/user5_sea.jpg) no-repeat center;
+    background-size: 150%;
+    width: 32px;
+    height: 32px;
+    border-radius: 90px;
+    float: left;
+    position: relative;
+    top: 19px;
+    left: 11px;
+    display: block;
+}
+.feed > .feed2 > .feed2_pt{
+    position: relative;
+}
+.feed > .feed2 > .feed2_pt img{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    width: 23px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 90px;
+    cursor: pointer;
+}
+.feed > .feed2 > .feed2_pt img:nth-child(2){
+    position: absolute;
+    right: 13px;
+}
+.feed > .feed2 > .feed2_pt img:nth-child(1){
+    position: absolute;
+    left: 13px;
+    display: none;
+}
+.feed > .fed > .feed2_pt > input[type=checkbox]:checked +.pt > img:nth-child(1){
+    display: inline-block;
+}
+.feed > .fed > .feed2_pt > input[type=checkbox]:checked +.pt > img:nth-child(2){
+    display: none;
+}
+/*-----------------------------------------*/
+.feed > .fed > .feed2_pt > input[type=checkbox]{
+    display: none;
+}
+.feed > .fed > .feed2_pt > .pt{
+    display: inline-block;
+    margin-bottom: -10px;
+    width: 100%;
+    height: 620px;
+    /* padding-left: 30px !important;
+    line-height: 20px !important; */
+    background: url(../img/feed2.jpg) no-repeat;
+    background-size: 1223px;
+    background-position: 0;
+    transition: all 0.5s;
+}
+.feed > .fed > .feed2_pt > input[type=checkbox]:checked + .pt{
+    display: inline-block;
+    transition: all 0.5s;
+    background-position: -610px;
+}
+/*-----------------------------------------*/
+.feed > .feed2 > .pt_bw{
+    background:url(../img/cpter.PNG) no-repeat center;
+    background-color: white;
+}
+.feed > .fed > .feed2_pt:checked + .pt_bw{
+    background:url(../img/cpter1.PNG) no-repeat center;
+    background-color: white;
+}
+/*-----------------------------------------*/
+.loading{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    background: url(../img/loading.gif) no-repeat center;
+    background-size: 140%;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .innerct{
+        clear: both;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #sidebar{display: none;}
+    #content{
+        margin: 0 auto;
+    }
+    div.nav_area{
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 100%;
+        vertical-align: middle;
+    }
+    .nav_area .search{
+        margin-left: 20%;
+        width: 250px;
+    }
+    .nav_area .logo img{
+        position: relative;
+        top: 19px;
+        left: 20px;
+    }
+    .nav_area ul{
+        display: inline;
+        width: 350px;
+        float: right;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .nav_area li:first-child{
+        margin: 8px;
+        display: inline;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .nav_area li:nth-child(2){
+        margin: 8px;
+        display: inline;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .nav_area li:nth-child(3){
+        margin: 8px;
+        display: inline;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .nav_area li:nth-child(4){
+        margin: 8px;
+        display: inline;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .nav_area li:last-child{
+        margin: 8px;
+        display: inline;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .nav_area .top_user{
+        background: url(../img/icon_me.jpg) no-repeat center;
+        background-size: 150%;
+        display: inline;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: -9px;
+        border-radius: 90px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 954px) and (min-width: 900px){
+    .nav_area .search{
+        margin-left: 18%;
+        width: 230px;
+    }
+}
+@media screen and (max-width: 905px) and (min-width: 800px){
+    .nav_area .search{
+        margin-left: 12%;
+        width: 180px;
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 720px){
+    .nav_area .search{
+        margin-left: 5%;
+        width: 150px;
+    }
+}
+@media screen and (max-width: 720px) and (min-width: 557px){
+    .nav_area .search{
+        display: none;
+    }
+}
+@media screen and (max-width: 557px){
+    .all{
+        width: 100%;
+        height: 2200px;
+        background-color: #fcfcfc;
+    }
+    .innerct{
+        clear: both;
+        width: 543px;
+        padding-left: 0px;
+    }
+    #sidebar{display: none;}
+    #content{
+        width: 543px;
+        position: relative;
+    }
+    div.nav_area{
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 543px;
+    }
+    .nav_area .logo{
+        display: inline;
+        position: relative;
+        width: 103px;
+        height: 29px;
+    }
+    .nav_area .logo img{
+        display: inline;
+        position: absolute;
+        top: 19px;
+        left: 20px;
+    }
+    .nav_area .search{
+        display: none;
+    }
+    .nav_area ul{
+        display: inline;
+        width: 350px;
+        float: right;
+        position: relative;
+        left: 20px;
+        top: 0px;
+    }
+    .nav_area li:first-child{
+        margin: 8px;
+        display: inline;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .nav_area li:nth-child(2){
+        margin: 8px;
+        display: inline;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .nav_area li:nth-child(3){
+        margin: 8px;
+        display: inline;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .nav_area li:nth-child(4){
+        margin: 8px;
+        display: inline;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .nav_area li:last-child{
+        margin: 8px;
+        display: inline;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    #content .story{
+        position: relative;
+        width: 497px;
+        top: 57px;
+        right: 0px;
+        box-sizing: border-box;
+        padding-left: 0px;
+    }
+    #content .story .user:last-child{
+        display: none;
+    }
+    #content .feed{
+        width: 497px;
+        position: relative;
+        right: 0px;
+        top: 77px;
+    }
+    #content .feed .fed{
+        border: none;
+    }
+    #content .feed .fed_top{
+        width: 497px;
+    }
+    #content .feed .feed1_pt{
+        width: 497px;
+    }
+    #content .feed > .fed > .feed1_pt{
+        background: url(../img/feed1.jpg) no-repeat;
+        background-size: 497px;
+        width: 100%;
+        height: 497px;
+    }
+    .feed > .fed > .fed_top > .feed_dat{
+        position: relative;
+        top: -3px;
+        right: 35px;
+    }
+    .feed > .fed > .pt_bw img:nth-child(5){
+        display: inline;
+        float: right;
+        position: relative;
+        right: 20px;
+    }.feed > .fed > .comment{
+        width: 100%;
+        height: 230px;
+    }
+    .feed > .fed > .comment .comment_face{
+        display: none;
+    }
+    .feed > .fed > .comment > input{
+        display: none;
+    }
+    .feed > .fed > .comment p:last-child{
+        display: none;
+    }
+    .feed > .fed > .comment .comment_lv{
+        position: relative;
+        left: 440px;
+        top: -28px;
+    }
+    .loading{
+        margin-top: 0px;
+    }
+    .feed > .fed > .feed2_pt > .pt{
+        display: inline-block;
+        margin-bottom: -10px;
+        width: 100%;
+        height: 497px;
+        /* padding-left: 30px !important;
+        line-height: 20px !important; */
+        background: url(../img/feed2.jpg) no-repeat;
+        background-size: 1100px;
+        background-position: 0;
+        transition: all 0.5s;
+    }
+    .feed > .feed2 > .feed2_pt img:nth-child(2){
+        position: absolute;
+        right: 37px;
+    }
+}

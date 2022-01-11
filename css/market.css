@@ -1,0 +1,166 @@
+body{
+    background: url(../img/background_phone.jpg) left top no-repeat fixed;
+    background-size: cover; 
+}
+div{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+#topmanu{
+    position: fixed;
+    top: 0px;
+    padding: 25px 0 0 0;
+    margin: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+#topmanu div{
+    position: relative;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+}
+#topmanu a{
+    margin: 0 20px;
+}
+#topmanu img{
+    width: 100%;
+}
+#topmanu img:hover{
+    transform: scale(1.1);
+}
+#container{
+    width: 310px;
+}
+#vacoom{
+    height: 85px;
+}
+#ad1{
+    display: none;
+}
+div#check{
+    margin: 0px auto;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 1px 0px;
+    background-color: black;  
+    text-align: left;
+    text-indent: 7px;
+}
+div#order{
+    background-color: rgb(248, 244, 244, 0.5);
+    margin: 0px auto;
+    border: 1px solid gray;
+    font-weight: bolder;
+}
+div#order > p:nth-child(1){
+    color: red;
+    font-size: 20px;
+}
+div#order > p:nth-child(2){
+    color: black;
+    font-size: 24px;
+}
+div#order span{
+    color: blue;
+}
+div#order > p:nth-child(3){
+    color: black;
+    font-size: 24px;
+}
+div#refund{
+    background-color: rgb(248, 244, 244, 0.5);
+    margin: -1px auto 0px;
+    border: 1px solid gray;
+    font-weight: bolder;
+}
+div#refund > p:nth-child(1){
+    color: red;
+    font-size: 20px;
+}
+div#refund > p:nth-child(2){
+    color: black;
+    font-size: 24px;
+}
+div#refund span{
+    color: blue;
+}
+div#refund > p:nth-child(3){
+    color: black;
+    font-size: 24px;
+}
+div#call{
+    background-color: rgb(248, 244, 244, 0.5);
+    margin: -1px auto 0px;
+    border: 1px solid gray;
+    font-weight: bolder;
+}
+div#call > p:nth-child(1){
+    color: red;
+    font-size: 20px;
+}
+div#call > p:nth-child(2){
+    color: black;
+    font-size: 24px;
+}
+div#call > p:nth-child(3){
+    color: black;
+    font-size: 16px;
+}
+#upBookmark{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+#upBookmark p{
+    text-align: right;
+}
+#upBookmark a :hover{
+    transform: scale(1.1);
+}
+#right{
+    padding: 20px;
+    color: gray;
+}
+@media screen and (min-width: 550px) {
+    body{
+        background: url(../img/background.jpg) left top no-repeat fixed;
+        background-size: cover; 
+    }
+}
+@media screen and (min-width: 768px) {
+    body{
+        background: url(../img/background.jpg) left top no-repeat fixed;
+        background-size: cover; 
+    }
+    #topmanu img{
+        width: 100%;
+    }
+    #topmanu a{
+        margin: 0 35px;
+    }
+    #container{
+        width: 650px;
+    }
+    #ad2{
+        display: none;
+    }
+    #ad1{
+        display: inline;
+    }
+}
+@media screen and (min-width: 1024px) {
+    body{
+        background-size: cover; 
+    }
+    #topmanu img{
+        width: 100%;
+    }
+    #topmanu a{
+        margin: 0 50px;
+    }
+}

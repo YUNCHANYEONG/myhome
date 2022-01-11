@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../img/background_phone.jpg) left top no-repeat fixed;
+    background-size: cover; 
+}
+#topmanu{
+    position: fixed;
+    top: 0px;
+    padding: 25px 0 0 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 79px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+#topmanu div{
+    position: relative;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+}
+#topmanu a{
+    margin: 0 20px;
+}
+#topmanu img{
+    width: 100%;
+}
+#topmanu img:hover{
+    transform: scale(1.1);
+}
+#container{
+    width: 100%;
+    margin-top: 80px;
+}
+.header{
+    width: 100%;
+    background-color: black;
+}
+.nav > ul{
+    height: 50px;
+    list-style: none;
+    color: white;
+}
+.nav > ul > li{
+    float: left;
+    padding: 10px;
+    margin: 5px 5px;
+}
+h2{
+    text-align: center;
+}
+/*
+    구형폰 : 320px
+    현재폰 : 360px ~ 375px
+*/
+.nav, #contents{
+    width: 310px;
+    margin: 0 auto;
+}
+.nav > ul {
+    font-size: 12px;
+}
+.nav li:hover{
+    transform: scale(1.1);
+}
+#intro{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#intro > img {
+    width: 45%;
+    padding: 10px;
+}
+#intro img:hover{
+    transform: scale(1.1);
+    position: relative;
+    display: inline-block;
+}
+#desc span{
+    font-weight: bolder;
+}
+#desc > h2 {
+    color: honeydew;
+}
+#desc{
+    width: 100%;
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: rgba(77, 167, 92, 0.568);
+}
+#desc p{
+    margin-bottom: 14px;
+}
+#footer{
+    width: 100%;
+    height: 40px;
+    padding: 16px;
+    background-color: black;
+    color: white;
+}
+#footer > p{
+    text-align: center;
+    line-height: 10px;
+}
+@media screen and (min-width: 550px) {
+    body{
+        background: url(../img/background.jpg) left top no-repeat fixed;
+        background-size: cover; 
+    }
+}
+/*
+    테블릿 : 768px~
+*/
+@media screen and (min-width: 768px) {
+    body{
+        background: url(../img/background.jpg) left top no-repeat fixed;
+        background-size: cover; 
+    }
+    #topmanu img{
+        width: 100%;
+    }
+    #topmanu a{
+        margin: 0 35px;
+    }
+    .nav, #contents{
+        width: 750px;
+        margin: 0 auto;
+    }
+    .nav > ul > li{
+        float: left;
+        padding: 10px;
+        margin: 5px 56px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    #intro{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #intro > img{
+        width: 20%;
+        padding: 10px;
+    }
+    #desc{
+        width: 100%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+    #desc p{
+        margin: 15px;
+        font-size: 19px;
+    }
+    
+    #footer{
+        height: 60px;
+        padding: 25px;
+        background-color: gray;
+    }
+}
+/*
+    데스크탑 가로 사이즈 : 1024px ~ 
+*/
+@media screen and (min-width: 1024px) {
+    #topmanu a{
+        margin: 0 50px;
+    }
+    .nav, #contents{
+        width: 1010px;
+        margin: 0 auto;
+    }
+    .nav > ul > li{
+        margin: 5px 85px;
+        font-size: 16px;
+    }
+    #intro{
+        width: 100%;
+    }
+    #intro > img{
+        width: 14%;
+        padding: 10px;
+    }
+    #desc{
+        width: 100%;
+        padding: 10px;
+        margin: 10px auto;
+        text-align: left;
+        column-count: 4;
+        column-gap: 35px;
+        column-rule: 2px solid rgb(255, 255, 255);
+        line-height: 40px;
+        font-size: 19px;
+    }
+    #desc > h2 {
+        column-span: all;
+    }
+    #footer{
+        height: 70px;
+        padding: 30px;
+    }
+    
+}

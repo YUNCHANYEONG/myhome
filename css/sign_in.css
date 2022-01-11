@@ -1,0 +1,290 @@
+body{
+    background: url(../img/background.jpg) left top no-repeat fixed;
+    background-size: 768px 100%;
+}
+div{
+    padding-top: 90px;
+    margin: 0 auto;
+    width: 370px;
+    height: 0px;
+    text-align: left;
+}
+p{
+    box-sizing: border-box;
+    padding: 0 0 0 5px;
+    margin: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+input{
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 27px;
+    margin-bottom: 15px;
+    text-indent: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+input:focus{
+    background-color: rgba(255, 255, 255, 0.589);
+}
+select{
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#login{
+    padding: 0px;
+    text-align: right;
+}
+#login a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    margin: 0 10px;
+}
+#login td:hover{
+    transform: scale(1.1);
+}
+
+legend{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+fieldset{
+    border: 2px solid black;
+}
+
+fieldset > p:nth-child(3) > input{ /*아이디*/
+    width: 120px;
+    margin-left: 41px;
+}
+fieldset > p:nth-child(4) > input{ /*비밀번호*/
+    width: 150px;
+    margin-left: 28px;
+}
+fieldset > p:nth-child(5) > input{ /*비밀번호 확인*/
+    width: 150px;
+    margin-left: -3px;
+}
+fieldset > p:nth-child(6) > input{ /*이름*/
+    width: 100px;
+    margin-left: 57px;
+}
+fieldset > p:nth-child(7) > input{ /*휴대폰 번호*/
+    width: 125px;
+    margin-left: 9px;
+}
+fieldset > p:nth-child(8) > input{ /*이메일*/
+    width: 180px;
+    margin-left: 41px;
+}
+fieldset > p:nth-child(9){ /*취미*/
+    font-size: 14px;
+    position: relative;
+    bottom: 5px;
+}
+fieldset > p:nth-child(9) input{ /*취미*/
+    position: relative;
+    top: 8px;
+    width: 13px;
+}
+fieldset > p:nth-child(9) > label:first-child{
+    margin-left: 5px;
+}
+fieldset > p:nth-child(9) > label{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+fieldset > p:nth-child(10) input:nth-child(1){ /*주민번호*/
+    width: 60px;
+    margin-left: 3px;
+    text-indent: 1px;
+}
+fieldset > p:nth-child(10) input:nth-child(2){ /*주민번호*/
+    width: 70px;
+    text-indent: 3px;
+}
+fieldset > p:nth-child(10) input:nth-child(3){ /*주민번호 검증*/
+    width: 82px;
+    font-size: 11px;
+    text-indent: -4px;
+    letter-spacing: -2px;
+    cursor: pointer;
+}
+fieldset > p:nth-child(11) input{ /*생년월일*/
+    width: 35px;
+    margin-left: 15px;
+    margin-right: 3px;
+    text-indent: 5px;
+}
+fieldset > p:nth-child(11) input:nth-child(1){ /*생년월일*/
+    width: 52px;
+    margin-left: 30px;
+}
+fieldset > p:nth-child(12) input:nth-child(1){ /*우편번호*/
+    width: 140px;
+    margin-left: 30px;
+}
+fieldset > p:nth-child(12) input:nth-child(2){ /*우편번호 검색*/
+    width: 80px;
+    text-indent: -2px;
+    cursor: pointer;
+    font-size: 11px;
+}
+fieldset > p:nth-child(13) > input{ /*주소*/
+    width: 200px;
+    margin-left: 57px;
+}
+fieldset > p:nth-child(14) > input{ /*상세주소*/
+    width: 200px;
+    margin-left: 28px;
+}
+fieldset > p:nth-child(15) > input{ /*참고사항*/
+    width: 200px;
+    margin-left: 28px;
+}
+fieldset > p:nth-child(16){
+    text-align: center;
+    padding: 0;
+    margin: 10px 0;
+}
+fieldset > p:nth-child(16) input{ /*버튼*/
+    width: 100px;
+    text-indent: 0px;
+    cursor: pointer;
+    margin: 0 16px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    body{
+        background-size: 1024px 100%; 
+    }
+    div{
+        padding-top: 90px;
+        margin: 0 auto;
+        width: 650px;
+        height: 0px;
+        text-align: left;
+    }
+    p{
+        font-size: 19px;
+    }
+    input{
+        height: 30px;
+    }
+    fieldset > p:nth-child(3) > input{ /*아이디*/
+        width: 220px;
+        margin-left: 60px;
+    }
+    fieldset > p:nth-child(4) > input{ /*비밀번호*/
+        width: 250px;
+        margin-left: 40px;
+    }
+    fieldset > p:nth-child(5) > input{ /*비밀번호 확인*/
+        width: 250px;
+        margin-left: -4px;
+    }
+    fieldset > p:nth-child(6) > input{ /*이름*/
+        width: 100px;
+        margin-left: 77px;
+    }
+    fieldset > p:nth-child(7) > input{ /*휴대폰 번호*/
+        width: 300px;
+        margin-left: 17px;
+    }
+    fieldset > p:nth-child(8) > input{ /*이메일*/
+        width: 300px;
+        margin-left: 60px;
+    }
+    fieldset > p:nth-child(9){ /*취미*/
+        font-size: 20px;
+        position: relative;
+        bottom: 10px;
+    }
+    fieldset > p:nth-child(9) input{ /*취미*/
+        position: relative;
+        top: 8px;
+        width: 17px;
+    }
+    fieldset > p:nth-child(9) > label:first-child{
+        margin-left: 70px;
+    }
+    fieldset > p:nth-child(9) > label{
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0px;
+    }
+    fieldset > p:nth-child(10) input:nth-child(1){ /*주민번호*/
+        width: 70px;
+        margin-left: 4px;
+        text-indent: 8px;
+    }
+    fieldset > p:nth-child(10) input:nth-child(2){ /*주민번호*/
+        width: 80px;
+        text-indent: 7px;
+    }
+    fieldset > p:nth-child(10) input:nth-child(3){ /*주민번호 검증*/
+        width: 150px;
+        text-indent: 0px;
+        cursor: pointer;
+        font-size: 14px;
+        text-indent: 3px;
+        letter-spacing: 0px;
+    }
+    fieldset > p:nth-child(11) input{ /*생년월일*/
+        width: 45px;
+        margin-left: 20px;
+        margin-right: 6px;
+        text-indent: 10px;
+    }
+    fieldset > p:nth-child(11) input:nth-child(1){ /*생년월일*/
+        width: 62px;
+        margin-left: 40px;
+        text-indent: 10px;
+    }
+    fieldset > p:nth-child(12) input:nth-child(1){ /*우편번호*/
+        width: 200px;
+        margin-left: 40px;
+    }
+    fieldset > p:nth-child(12) input:nth-child(2){ /*우편번호 검색*/
+        width: 130px;
+        text-indent: 0px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    fieldset > p:nth-child(13) > input{ /*주소*/
+        width: 300px;
+        margin-left: 77px;
+    }
+    fieldset > p:nth-child(14) > input{ /*상세주소*/
+        width: 300px;
+        margin-left: 40px;
+    }
+    fieldset > p:nth-child(15) > input{ /*참고사항*/
+        width: 300px;
+        margin-left: 40px;
+    }
+    fieldset > p:nth-child(16){  /*버튼*/
+        text-align: center;
+        padding: 0;
+        margin: 20px 0;
+    }
+    fieldset > p:nth-child(16) input{  /*버튼*/
+        width: 130px;
+        text-indent: 0px;
+        cursor: pointer;
+        margin: 0 40px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    body{
+        background-size: cover; 
+    }
+}

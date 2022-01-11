@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주민등록번호 유효성 검사 프로그램</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        
+        const str = prompt('주민등록번호 13자리를 입력하세요.');
+
+        let result = [];
+        let key = [2,3,4,5,6,7,8,9,2,3,4,5,0];
+        let sum = 0;
+
+        for(let i = 0 ; i < str.length; i++){
+            result[i] = Number(str.charAt(i));
+            sum += result[i] * key[i];
+        }
+
+        let num = sum % 11;
+        let result1 = 11 - num;
+
+        if(result1 < 10){
+            if(result[12] === result1){
+                alert('유효한 주민번호 입니다.');
+            }else{
+                alert('입력하신 주민번호는 유효하지 않은 주민번호입니다. 다시 입력바랍니다.');
+            }
+        } else{
+            if(result[12] === (result1 % 10)){
+                alert('유효한 주민번호 입니다.');
+            }else{
+                alert('입력하신 주민번호는 유효하지 않은 주민번호입니다. 다시 입력바랍니다.');
+            }
+        }
+        window.close();
+
+    </script>
+</body>
+</html>

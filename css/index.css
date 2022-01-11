@@ -1,0 +1,339 @@
+* {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+body{
+    background: url(../img/background_phone.jpg) left top no-repeat fixed;
+    background-size: cover; 
+}
+div{
+    padding: 0;
+    margin: 0 auto;
+    width: 330px;
+}
+#music{
+    text-align: left;
+    width: 25%;
+    float: left;
+}
+#music > audio {
+    box-sizing: border-box;
+    margin: 0;
+    height: 30px;
+    width: 100px;
+    position: relative;
+    bottom: 10px;
+}
+#time{
+    box-sizing: border-box;
+    margin: 0;
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.clock {
+    display: inline;
+    width: 50px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.clock:hover{
+    transition: all 0.1s;
+    transform: scale(1.1);
+}
+#login_title{
+    text-align: right;
+    width: 25%;
+    height: 50px;
+    float: right;
+}
+#login_title a{
+    position: relative;
+    top: 10px;
+    padding: 0;
+    font-weight: bolder;
+    color: black;
+    display: block;
+}
+#login_title a:hover{
+    transform: scale(1.1);
+}
+#top tr:hover{
+    animation: bounce 0.5s infinite;
+}
+@keyframes bounce{ /*떨어지기*/
+    from{
+        transform: scale(1);
+    }
+    30%{
+        transform: scale(0.9);
+    }
+    60%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+#title{
+    color: black;
+}
+#welcome{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.about{
+    padding: 20px 0;
+}
+.aboutTitle{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.aboutText{
+    font-size: 16px;
+    font-weight: bolder;
+}
+#contents p{
+    font-size: 24px;
+    font-weight: bolder;
+}
+#contents tr{
+    transition: all 1s ease;
+}
+#contents tr:hover{
+    transform: translate(25px);
+}
+table th{
+    height: 100px;
+}
+#upBookmark{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+#upBookmark p{
+    text-align: right;
+}
+#upBookmark p :hover{
+    transform: scale(1.1);
+}
+#right{
+    padding: 20px;
+    color: gray;    
+}
+.box{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 330px;
+}
+.box #snow1{
+    position: fixed;
+    left: 30px;
+    top:-45px;
+    animation: falling 22s 3s infinite;
+}
+.box #snow2{
+    position: fixed;
+    left:100px;
+    top:-45px;
+    animation: falling 28s 10s infinite;
+}
+.box #snow3{
+    position: fixed;
+    left: 180px;
+    top:-45px;
+    animation: falling 25s 2s infinite;
+}
+.box #snow4{
+    position: fixed;
+    left: 250px;
+    top:-45px;
+    animation: falling 25s 5s infinite;
+}
+.box #snow5{
+    position: fixed;
+    left: 400px;
+    top:-45px;
+    animation: falling 30s 10s infinite;
+}
+.box #snow6{
+    position: fixed;
+    left: 520px;
+    animation: falling 18s infinite;
+}
+.box #snow7{
+    position: fixed;
+    left: 600px;
+    top:-45px;
+    animation: falling 28s 7s infinite;
+}
+.box #snow8{
+    position: fixed;
+    left: 700px;
+    top:-45px;
+    animation: falling 30s 2s infinite;
+}
+.box #snow9{
+    position: fixed;
+    left: 810px;
+    animation: falling 27s infinite;
+}
+.box #snow10{
+    position: fixed;
+    left: 930px;
+    top:-45px;
+    animation: falling 15s 10s infinite;
+}
+.box #snow11{
+    position: fixed;
+    left: 1000px;
+    top:-45px;
+    animation: falling 20s infinite;
+}
+.box #snow12{
+    position: fixed;
+    left: 1140px;
+    top:-45px;
+    animation: falling 27s 5s infinite;
+}
+.box #snow13{
+    position: fixed;
+    left: 120px;
+    animation: falling 16s infinite;
+}
+.box #snow14{
+    position: fixed;
+    left: 1320px;
+    top:-45px;
+    animation: falling 28s 8s infinite;
+}
+.box #snow15{
+    position: fixed;
+    left: 1400px;
+    top:-45px;
+    animation: falling 25s 2s infinite;
+}
+.box #snow16{
+    position: fixed;
+    left: 1560px;
+    animation: falling 40s infinite;
+}
+.box #snow17{
+    position: fixed;
+    left: 1630px;
+    top:-45px;
+    animation: falling 20s 3s infinite;
+}
+.box #snow18{
+    position: fixed;
+    left: 1950px;
+    top:-45px;
+    animation: falling 20s infinite;
+}
+
+@keyframes falling{ /*떨어지기*/
+    from{
+        opacity: 0;
+        transform: translate(0,0) rotateX(0deg) rotateY(0deg);
+    }
+    10%{
+        opacity: 0.7;
+        transform: translate(0,100px) rotateX(90deg) rotateY(90deg);
+    }
+    20%{
+        opacity: 0.9;
+        transform: translate(0,200px) rotateX(180deg) rotateY(180deg);
+    }
+    30%{
+        opacity: 1;
+        transform: translate(0,300px) rotateX(270deg) rotateY(270deg);
+    }
+    40%{
+        opacity: 0.6;
+        transform: translate(0,400px) rotateX(360deg) rotateY(360deg);
+    }
+    50%{
+        opacity: 0.3;
+        transform: translate(0,500px) rotateX(270deg) rotateY(270deg);
+    }
+    60%{
+        opacity: 0.6;
+        transform: translate(0,600px) rotateX(180deg) rotateY(180deg);
+    }
+    70%{
+        opacity: 1;
+        transform: translate(0,700px) rotateX(90deg) rotateY(90deg);
+    }
+    80%{
+        opacity: 1;
+        transform: translate(0,800px) rotateX(0deg) rotateY(0deg);
+    }
+    90%{
+        opacity: 0;
+        transform: translate(0,900px) rotateX(90deg) rotateY(90deg);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0,0) rotateX(180deg) rotateY(180deg);
+    }
+}
+@media screen and (min-width: 550px) {
+    body{
+        background: url(../img/background.jpg) left top no-repeat fixed;
+        background-size: cover; 
+    }
+}
+@media screen and (min-width: 768px) {
+    body{
+        background: url(../img/background.jpg) left top no-repeat fixed;
+        background-size: cover; 
+    }
+    div{
+        width: 650px;
+    }
+    #login{
+        width: 650px;
+        margin: 0 auto;
+    }
+    #music{
+        width: 380px;
+    }
+    #music > audio:hover {
+        width: 320px;
+        transition: all 0.4s;
+    }
+    #login_title{
+        width: 130px;
+    }
+    #topmanu img{
+        width: 100%;
+    }
+    #topmanu a{
+        margin: 0 35px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    div{
+        width: 700px;
+    }
+    #login{
+        width: 700px;
+        margin: 0 auto;
+    }
+    #music{
+        width: 490px;
+    }
+    #login_title{
+        width: 50px;
+    }
+    #topmanu img{
+        width: 100%;
+    }
+    #topmanu a{
+        margin: 0 50px;
+    }
+}

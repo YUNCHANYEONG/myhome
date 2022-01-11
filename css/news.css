@@ -1,0 +1,147 @@
+* {
+    text-decoration: none;
+}
+body{
+    background: url(../img/background_phone.jpg) left top no-repeat fixed;
+    background-size: cover; 
+}
+div{
+    padding: 0;
+    margin: 0 auto;
+}
+#topmanu{
+    position: fixed;
+    top: 0px;
+    padding: 25px 0 0 0;
+    margin: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+#topmanu div{
+    position: relative;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+}
+#topmanu a{
+    margin: 0 20px;
+}
+#topmanu img{
+    width: 100%;
+}
+#topmanu img:hover{
+    transform: scale(1.1);
+}
+#container{
+    width: 310px;
+}
+#vacoom{
+    height: 80px;
+}
+.headline{
+    padding: 5px;
+    text-align: center;
+}
+#img1{
+    display: none;
+}
+#maintitle{
+    background-color: rgb(248, 244, 244, 0.5)
+}
+.alt{
+    font-size: 16;
+    text-align: center;
+}
+.copy{
+    color: gray;
+}
+.page{
+    color: black;
+}
+#goodd{
+    padding: 0;
+    margin: 0px auto;
+    width: 310px;
+    height: 70px;
+    text-align: center;
+}
+#goodd a{
+    margin: 40px;
+}
+#textarea{
+    resize: none;
+    width: 100%;
+    height: 50px;
+}
+#button{
+    padding: 0;
+    margin: 0px auto;
+    width: 650px;
+    height: 70px;
+    text-align: center;
+}
+#upBookmark{
+    width: 650px;
+    text-align: right;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+#upBookmark a :hover{
+    transform: scale(1.1);
+}
+#right{
+    padding: 20px;
+    text-align: center;
+    color: gray;
+}
+@media screen and (min-width: 550px) {
+    body{
+        background: url(../img/background.jpg) left top no-repeat fixed;
+        background-size: cover; 
+    }
+}
+@media screen and (min-width: 768px) {
+    body{
+        background: url(../img/background.jpg) left top no-repeat fixed;
+        background-size: cover; 
+    }
+    #topmanu img{
+        width: 100%;
+    }
+    #topmanu a{
+        margin: 0 35px;
+    }
+    #container{
+        width: 650px;
+    }
+    #img1{
+        display: inline;
+    }
+    #img2{
+        display: none;
+    }
+    #goodd{
+        padding: 0;
+        margin: 0px auto;
+        width: 650px;
+        height: 70px;
+        text-align: center;
+    }
+    #goodd a{
+        margin: 120px;
+    }
+    #textarea{
+        height: 80px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #topmanu img{
+        width: 100%;
+    }
+    #topmanu a{
+        margin: 0 50px;
+    }
+}

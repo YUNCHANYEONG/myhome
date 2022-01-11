@@ -1,0 +1,148 @@
+* {
+    text-decoration: none;
+}
+body{
+    background: url(../img/background_phone.jpg) left top no-repeat fixed;
+    background-size: cover; 
+}
+div{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+#topmanu{
+    position: fixed;
+    top: 0px;
+    padding: 25px 0 0 0;
+    margin: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+#topmanu div{
+    position: relative;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+}
+#topmanu a{
+    margin: 0 20px;
+}
+#topmanu img{
+    width: 100%;
+}
+#topmanu img:hover{
+    transform: scale(1.1);
+}
+#vacoom{
+    height: 80px;
+}
+#container{
+    width: 360px;
+}
+#container img{
+    display: none;
+}
+#bookmark{
+    padding: 5px;
+}
+#bookmark a{
+    color: black;
+}
+#images p{
+    font-size: 18px;
+    font-weight: bolder;
+}
+#images p:nth-child(2){
+    display: none;
+}
+#images a:focus{
+    color: black;
+}
+#images a:visited{
+    color: black;
+}
+#images a{
+    margin: 10px;
+}
+iframe{
+    width: 100%; 
+    height: 500px; 
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+#upBookmark{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+#upBookmark p{
+    text-align: right;
+}
+#upBookmark a :hover{
+    transform: scale(1.1);
+}
+#right{
+    text-align: center;
+    padding: 20px;
+    color: gray;
+}
+@media screen and (min-width: 550px) {
+    body{
+        background: url(../img/background.jpg) left top no-repeat fixed;
+        background-size: cover; 
+    }
+}
+@media screen and (min-width: 768px) {
+    body{
+        background: url(../img/background.jpg) left top no-repeat fixed;
+        background-size: cover; 
+    }
+    #topmanu img{
+        width: 100%;
+    }
+    #topmanu a{
+        margin: 0 35px;
+    }
+    #container{
+        width: 650px;
+    }
+    #container img{
+        display: inline;
+    }
+    #container span{
+        display: none;
+    }
+    #images p:nth-child(1){
+        display: none;
+    }
+    #images p:nth-child(2){
+        display: block;
+    }
+    #images a{
+        margin: 0px;
+    }
+    iframe{
+        height: 800px; 
+    }
+
+}
+@media screen and (min-width: 1024px) {
+    #topmanu img{
+        width: 100%;
+    }
+    #topmanu a{
+        margin: 0 50px;
+    }
+    #container{
+        width: 950px;
+    }
+    #images a{
+        margin: 30px;
+    }
+    #images img{
+        width: 22%;
+    }
+    
+}
