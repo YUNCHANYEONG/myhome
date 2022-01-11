@@ -1,15 +1,5 @@
 'use strict';
 
-function popup(){
-    var url = "../ID.html";
-    var name = "주민등록번호 유효성 검사 프로그램";
-    var option = "width = 500, height = 500, top = 100, left = 520, location = no";
-    var newWin = window.open(url, name, option);
-    if(newWin == null){
-        alert("팝업이 차단되었습니다. 팝업 차단 해제 후 다시 시도해주세요.")
-    }
-}
-
 let timeId = null;
 
 function printtime(){
